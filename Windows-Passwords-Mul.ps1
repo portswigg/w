@@ -11,6 +11,10 @@ switch ($language) {
         $userProfileString = '(?<=All User Profile\s+:\s).+'
         $keyContentString = '(?<=Key Content\s+:\s).+'
     }
+    'it' { # Italian
+        $userProfileString = '(?<=Tutti i profili utente\s+:\s).+'
+        $keyContentString = '(?<=Contenuto chiave\s+:\s).+'
+    }
     default { # Default to English if language is not supported
         $userProfileString = '(?<=All User Profile\s+:\s).+'
         $keyContentString = '(?<=Key Content\s+:\s).+'
